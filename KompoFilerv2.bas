@@ -1,7 +1,7 @@
  set romsize 8k
  set tv pal
 
- const noscore = 1
+ rem const noscore = 1
 
  dim nextframe = n
  dim frame = f
@@ -15,19 +15,9 @@ main
 
  if frame = 30 then nextframe = nextframe + 1 : frame = 0
 
- nextframe = 30
+ rem nextframe = 30
 
- if nextframe = 30 then goto dinopage
- if nextframe < 20 then goto nextframe120
- if nextframe = 21 then goto done21
- if nextframe = 22 then goto done22
- if nextframe = 23 then goto done23
- if nextframe = 24 then goto done24
- if nextframe = 25 then goto done25
- if nextframe = 26 then goto done26
- if nextframe = 27 then goto done27
- if nextframe = 28 then goto done28
- if nextframe = 29 then goto done29
+ if nextframe = 30 then goto dinopage else goto nextframe120
  goto main
  
 nextframe120 
@@ -51,6 +41,15 @@ nextframe120
  if nextframe = 18 then goto done18
  if nextframe = 19 then goto done19
  if nextframe = 20 then goto done20
+ if nextframe = 21 then goto done21
+ if nextframe = 22 then goto done22
+ if nextframe = 23 then goto done23
+ if nextframe = 24 then goto done24
+ if nextframe = 25 then goto done25
+ if nextframe = 26 then goto done26
+ if nextframe = 27 then goto done27
+ if nextframe = 28 then goto done28
+ if nextframe = 29 then goto done29
 
  goto main
 
