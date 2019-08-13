@@ -12,100 +12,110 @@ bmp_96x2_1_height = 91
    endif
    BYTE $00 ; leave this here!
 
+colour_red	= $64 ;$44
+colour_orange	= $44 ;$24
+colour_yellow	= $24 ;$14
+colour_green 	= $54 ;$C4
+colour_blue  	= $C4 ;$74
+colour_purple	= $84 ;$54
 
  ;*** this is the color of each line in the bitmap data
 bmp_96x2_1_colors
-	BYTE $0c
-	BYTE $0c
-	BYTE $0c
-	BYTE $0c
-	BYTE $0c
-	BYTE $0c
-	BYTE $0c
-	BYTE $0c
-	BYTE $0c
-	BYTE $0c
-	BYTE $0c
-	BYTE $0c
-	BYTE $0c
-	BYTE $0c
-	BYTE $0c
-	BYTE $0c
-	BYTE $0c
-	BYTE $0c
-	BYTE $0c
-	BYTE $0c
-	BYTE $0c
-	BYTE $0c
-	BYTE $0c
-	BYTE $0c
-	BYTE $0c
-	BYTE $0c
-	BYTE $0c
-	BYTE $0c
-	BYTE $0c
-	BYTE $0c
-	BYTE $0c
-	BYTE $0c
-	BYTE $0c
-	BYTE $0c
-	BYTE $0c
-	BYTE $0c
-	BYTE $0c
-	BYTE $0c
-	BYTE $0c
-	BYTE $0c
-	BYTE $0c
-	BYTE $0c
-	BYTE $0c
-	BYTE $0c
-	BYTE $0c
-	BYTE $0c
-	BYTE $0c
-	BYTE $0c
-	BYTE $0c
-	BYTE $0c
-	BYTE $0c
-	BYTE $0c
-	BYTE $0c
-	BYTE $0c
-	BYTE $0c
-	BYTE $0c
-	BYTE $0c
-	BYTE $0c
-	BYTE $0c
-	BYTE $0c
-	BYTE $0c
-	BYTE $0c
-	BYTE $0c
-	BYTE $0c
-	BYTE $0c
-	BYTE $0c
-	BYTE $0c
-	BYTE $0c
-	BYTE $0c
-	BYTE $0c
-	BYTE $0c
-	BYTE $0c
-	BYTE $0c
-	BYTE $0c
-	BYTE $0c
-	BYTE $0c
-	BYTE $0c
-	BYTE $0c
-	BYTE $0c
-	BYTE $0c
-	BYTE $0c
-	BYTE $0c
-	BYTE $0c
-	BYTE $0c
-	BYTE $0c
-	BYTE $0c
-	BYTE $0c
-	BYTE $0c
-	BYTE $0c
-	BYTE $0c
-	BYTE $0c
+	BYTE colour_red
+	BYTE colour_red
+	BYTE colour_red
+	BYTE colour_red
+	BYTE colour_red
+	BYTE colour_red
+	BYTE colour_red
+	BYTE colour_red
+	BYTE colour_red
+	BYTE colour_red
+	BYTE colour_red
+	BYTE colour_red
+	BYTE colour_red
+	BYTE colour_red
+	BYTE colour_red
+
+	BYTE colour_orange
+	BYTE colour_orange
+	BYTE colour_orange
+	BYTE colour_orange
+	BYTE colour_orange
+	BYTE colour_orange
+	BYTE colour_orange
+	BYTE colour_orange
+	BYTE colour_orange
+	BYTE colour_orange
+	BYTE colour_orange
+	BYTE colour_orange
+	BYTE colour_orange
+	BYTE colour_orange
+	BYTE colour_orange
+
+	BYTE colour_yellow
+	BYTE colour_yellow
+	BYTE colour_yellow
+	BYTE colour_yellow
+	BYTE colour_yellow
+	BYTE colour_yellow
+	BYTE colour_yellow
+	BYTE colour_yellow
+	BYTE colour_yellow
+	BYTE colour_yellow
+	BYTE colour_yellow
+	BYTE colour_yellow
+	BYTE colour_yellow
+	BYTE colour_yellow
+	BYTE colour_yellow
+
+	BYTE colour_green
+	BYTE colour_green
+	BYTE colour_green
+	BYTE colour_green
+	BYTE colour_green
+	BYTE colour_green
+	BYTE colour_green
+	BYTE colour_green
+	BYTE colour_green
+	BYTE colour_green
+	BYTE colour_green
+	BYTE colour_green
+	BYTE colour_green
+	BYTE colour_green
+	BYTE colour_green
+
+	BYTE colour_blue
+	BYTE colour_blue
+	BYTE colour_blue
+	BYTE colour_blue
+	BYTE colour_blue
+	BYTE colour_blue
+	BYTE colour_blue
+	BYTE colour_blue
+	BYTE colour_blue
+	BYTE colour_blue
+	BYTE colour_blue
+	BYTE colour_blue
+	BYTE colour_blue
+	BYTE colour_blue
+	BYTE colour_blue
+
+	BYTE colour_purple
+	BYTE colour_purple
+	BYTE colour_purple
+	BYTE colour_purple
+	BYTE colour_purple
+	BYTE colour_purple
+	BYTE colour_purple
+	BYTE colour_purple
+	BYTE colour_purple
+	BYTE colour_purple
+	BYTE colour_purple
+	BYTE colour_purple
+	BYTE colour_purple
+	BYTE colour_purple
+	BYTE colour_purple
 
    if >. != >[.+(bmp_96x2_1_height)]
       align 256
