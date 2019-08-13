@@ -17,7 +17,20 @@ main
  frame = frame + 1
 
  if frame = 30 then nextframe = nextframe + 1 : frame = 0
+
+ if nextframe < 20 then goto nextframe120
+ if nextframe = 21 then goto done21
+ if nextframe = 22 then goto done22
+ if nextframe = 23 then goto done23
+ if nextframe = 24 then goto done24
+ if nextframe = 25 then goto done25
+ if nextframe = 26 then goto done26
+ if nextframe = 27 then goto done27
+ if nextframe = 28 then goto done28
+ if nextframe = 29 then goto done29
+ if nextframe = 30 then drawscreen: goto dinopage
  
+nextframe120 
  if nextframe =  1 then goto done1
  if nextframe =  2 then goto done2
  if nextframe =  3 then goto done3
@@ -38,15 +51,9 @@ main
  if nextframe = 18 then goto done18
  if nextframe = 19 then goto done19
  if nextframe = 20 then goto done20
- if nextframe = 21 then goto done21
- if nextframe = 22 then goto done22
- if nextframe = 23 then goto done23
- if nextframe = 24 then goto done24
- if nextframe = 25 then goto done25
- if nextframe = 26 then goto done26
- if nextframe = 27 then goto done27
- if nextframe = 28 then goto done28
- if nextframe = 29 then goto done29
+
+ goto main
+
 
 
 framereturn
@@ -54,6 +61,10 @@ framereturn
 
  goto main
 
+dinopage
+
+ gosub titledrawscreen bank2
+ goto dinopage
 
 done1
  playfield:
@@ -548,3 +559,7 @@ done29
 end
  goto framereturn
 
+ bank 2
+ asm
+ include "titlescreen/asm/titlescreen.asm"
+end
