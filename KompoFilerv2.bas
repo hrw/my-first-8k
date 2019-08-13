@@ -1,23 +1,23 @@
  set romsize 8k
  set tv pal
- set kernel_options no_blank_lines player1colors
- set optimisation speed
 
  const noscore = 1
 
  dim nextframe = n
  dim frame = f
 
-
-main
-
  COLUPF = $28
  COLUBK = $00
+
+main
 
  frame = frame + 1
 
  if frame = 30 then nextframe = nextframe + 1 : frame = 0
 
+ nextframe = 30
+
+ if nextframe = 30 then goto dinopage
  if nextframe < 20 then goto nextframe120
  if nextframe = 21 then goto done21
  if nextframe = 22 then goto done22
@@ -28,7 +28,7 @@ main
  if nextframe = 27 then goto done27
  if nextframe = 28 then goto done28
  if nextframe = 29 then goto done29
- if nextframe = 30 then drawscreen: goto dinopage
+ goto main
  
 nextframe120 
  if nextframe =  1 then goto done1
