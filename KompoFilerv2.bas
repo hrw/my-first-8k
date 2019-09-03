@@ -6,7 +6,7 @@
  dim nextframe = n
  dim frame = f
 
- COLUPF = $28
+ COLUPF = $2E
  COLUBK = $00
 
 main
